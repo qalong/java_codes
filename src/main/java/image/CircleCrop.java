@@ -12,6 +12,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
+/**
+* 把图片裁剪成原型的实例
+*/
 public class CircleCrop {
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
