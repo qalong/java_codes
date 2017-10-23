@@ -12,6 +12,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
+/**
+* 图片圆形裁剪
+*/
 public class CircleCrop {
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
@@ -26,8 +29,6 @@ public class CircleCrop {
 		g2d.fillOval(0, 0, diameter - 1, diameter - 1);
 		g2d.dispose();
 
-//		BufferedImage masked = ImageIO.read(new File("d:\\cv1.JPG"));
-		
 		BufferedImage masked = new BufferedImage(diameter, diameter, BufferedImage.TYPE_INT_ARGB);
 		g2d = masked.createGraphics();
 		applyQualityRenderingHints(g2d);
@@ -46,7 +47,6 @@ public class CircleCrop {
 		
 		long end = System.currentTimeMillis();
 		System.out.println(end-start);
-//		JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(masked)));
 		JOptionPane.showMessageDialog(null, new JLabel(new ImageIcon(master)));
 		
 	}
