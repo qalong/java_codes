@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
-* 图片裁剪成圆形
+* 把图片裁剪成圆形
 */
 public class CircleCrop {
 	public static void main(String[] args) throws IOException {
